@@ -21,9 +21,13 @@ public class Looper implements ILooper {
     }
 
     private String getLine(int input, int factor) {
-        return "{0} x {1} = {2}".formatted(
-            input, factor, multiply(input, factor)
-        );
+        StringBuilder line = new StringBuilder();
+        line.append(input);
+        line.append(" x ");
+        line.append(factor);
+        line.append(" = ");
+        line.append(multiply(input, factor));
+        return line.toString();
     }
 
     @Override

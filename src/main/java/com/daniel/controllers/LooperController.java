@@ -11,8 +11,11 @@ public class LooperController {
         LinkedList<String> table = looper.getTable();
         Iterator<String> it = table.iterator();
 
+        System.out.println("\n=== Result ===\n");
+
         while (it.hasNext()) {
             System.out.println(it.next());
         }
+
     }
 }

@@ -5,10 +5,12 @@ import com.daniel.views.HomeView;
 public class HomeController {
 
     public HomeController() {
-        index()
+        index();
     }
 
     public void index() {
+        HomeView.printGreeting();
         HomeView.printMenu();
+        HomeView.printFarewell();
     }
 }
