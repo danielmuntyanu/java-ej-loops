@@ -4,12 +4,10 @@ import java.util.LinkedList;
 import java.util.Iterator;
 
 import com.daniel.looper.Looper;
-import com.daniel.looper.LooperDTO;
-import com.daniel.looper.LooperMapper;
 
 public class LooperController {
-    public static void printTable(LooperDTO dto) {
-        Looper looper = LooperMapper.toEntity(dto);
+    public static void printTable(int input) {
+        Looper looper = new Looper(input);
         LinkedList<String> table = looper.getTable();
         Iterator<String> it = table.iterator();
 
