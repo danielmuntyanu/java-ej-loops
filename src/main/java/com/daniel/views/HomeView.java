@@ -39,7 +39,7 @@ public class HomeView extends View {
             return printMenu();
         
         } catch (Exception exc) {
-            System.out.println("Please, enter the valid number. " + exc.getMessage() + "\n");
+            System.out.println("Please, enter the valid number. (" + exc.getMessage() + ")\n");
             return printMenu();
         }
 

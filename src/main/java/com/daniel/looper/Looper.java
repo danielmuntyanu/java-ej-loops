@@ -16,11 +16,13 @@ public class Looper implements ILooper {
         }
     }
 
-    private int multiply(int input, int factor) {
+    @Override
+    public int multiply(int input, int factor) {
         return input * factor;
     }
 
-    private String getLine(int input, int factor) {
+    @Override
+    public String getLine(int input, int factor) {
         StringBuilder line = new StringBuilder();
         line.append(input);
         line.append(" x ");
