@@ -24,7 +24,7 @@ public class HomeView extends View {
 
         System.out.print("\nYour number is: ");
 
-        String input = SCANNER.nextLine();
+        String input = getScanner().nextLine();
 
         try {
 
@@ -47,6 +47,6 @@ public class HomeView extends View {
     }
 
     private static void out() {
-        SCANNER.close();
+        getScanner().close();
     }
 }
